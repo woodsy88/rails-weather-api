@@ -7,7 +7,9 @@
 #   Character.create(name: 'Luke', movie: movies.first)
 
 
-l = location.create(name: "New York City")
+l = Location.create(name: "New York City")
+
+puts "1 location created"
 
 l.recordings.create(temp: 32, status: "cloudy")
 l.recordings.create(temp: 22, status: "sunny")
@@ -17,3 +19,4 @@ l.recordings.create(temp: 38, status: "thunder")
 l.recordings.create(temp: 28, status: "hail")
 l.recordings.create(temp: 16, status: "funtimes")
 
+puts "7 recordings created"
